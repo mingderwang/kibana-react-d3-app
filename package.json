@@ -6,7 +6,6 @@
     "version": "kibana"
   },
   "description": "Weeeeee",
-  "main": "gulpfile.js",
   "scripts": {
     "start": "gulp dev",
     "build": "gulp build",
@@ -35,9 +34,9 @@
     "bootstrap": "^3.3.6",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.16.1",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
-    "react-redux": "^5.0.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
     "redux": "^3.6.0",
     "redux-actions": "^1.2.0",
     "redux-promise": "^0.5.3",
