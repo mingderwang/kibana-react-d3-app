@@ -3,7 +3,7 @@ var path = require('path');
 module.exports = function (kibana) {
   return new kibana.Plugin({
     name: 'kibana-react-app',
-    require: ['kibana', 'elasticsearch', 'timelion'],
+    require: ['kibana', 'elasticsearch'],
     uiExports: {
       app: {
         title: 'kibana-react-app',

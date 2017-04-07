@@ -4,7 +4,10 @@ function rootReducer(state = {}, action) {
       return Object.assign({}, state, {
         counter: state.counter + 1
       });
-
+    case 'TWO_ADD':
+        return Object.assign({}, state, {
+          counter: state.counter + 2
+        });
     default:
       return state;
   }
