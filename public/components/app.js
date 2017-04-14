@@ -1,5 +1,5 @@
 import React from 'react';
-import Counter from './counter';
+import Timer from './timer';
 
 export default React.createClass({
   render() {
@@ -12,7 +12,8 @@ export default React.createClass({
           It is the only component that modifies state.
         </p>
 
-        <Counter></Counter>
+
+        <Timer></Timer>
       </div>
     );
   }

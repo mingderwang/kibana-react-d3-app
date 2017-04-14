@@ -1,16 +1,8 @@
-function rootReducer(state = {}, action) {
-  switch (action.type) {
-    case 'ONE_ADD':
-      return Object.assign({}, state, {
-        counter: state.counter + 1
-      });
-    case 'TWO_ADD':
-        return Object.assign({}, state, {
-          counter: state.counter + 2
-        });
-    default:
-      return state;
-  }
-}
+import timerReducer from './timer_reducer';
+import counterReducer from './counter_reducer';
+import { combineReducers } from 'redux';
 
-export default rootReducer;
+export default combineReducers({
+  timerReducer,
+  counterReducer
+});

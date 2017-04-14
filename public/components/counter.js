@@ -32,6 +32,7 @@ const Counter = React.createClass({
 });
 
 function mapStateToProps(state) {
+  console.log(state);
   return {
     counter: state.counter
   };

@@ -2,7 +2,9 @@ import React from 'react';
 import modules from 'ui/modules';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import timerReducer from './timer_reducer';
+
+import Reducer from './reducers';
+import rootReducer from './timer_reducer';
 import initialTimer from './initial_timer';
 import _ from 'lodash';
 
@@ -15,7 +17,7 @@ app.service('$store', (kbnVersion, basePath) => {
   initialTimer.app.basePath = basePath;
 
   const store = createStore(
-    timerReducer,
+    rootReducer,
     initialTimer,
     applyMiddleware(thunk)
   );
