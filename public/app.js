@@ -7,7 +7,7 @@ import './state/store_service';
 
 import rootComponent from './components/app';
 
-require('./main.less');
+require('./main.css');
 
 var app = require('ui/modules').get('apps/kibana-react-app', []);
 
