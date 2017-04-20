@@ -1,5 +1,6 @@
-export default {
-    app: {},
-    value: 0,
-    counter: 0
-};
+import { makeStore } from '../lib/store';
+import { randomizeData } from '../lib/core';
+
+makeStore();
+
+export default randomizeData();
