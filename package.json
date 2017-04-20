@@ -1,11 +1,11 @@
 {
-  "name": "kibana-react-app",
+  "name": "kibana-react-d3-app",
   "version": "0.0.1",
   "main": "index.js",
   "kibana": {
     "version": "kibana"
   },
-  "description": "Weeeeee",
+  "description": "Weeeeee + react + redux + d3",
   "scripts": {
     "start": "gulp dev",
     "build": "gulp build",
