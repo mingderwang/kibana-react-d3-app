@@ -7,8 +7,9 @@ import Reducer from './reducers';
 import rootReducer from './timer_reducer';
 import initialTimer from './initial_timer';
 import _ from 'lodash';
+import reducer from '../lib/reducer.js';
 
-const app = modules.get('apps/kibana-react-app');
+const app = modules.get('apps/kibana-react-d3-app');
 
 app.service('$store', (kbnVersion, basePath) => {
 
@@ -17,7 +18,7 @@ app.service('$store', (kbnVersion, basePath) => {
   initialTimer.app.basePath = basePath;
 
   const store = createStore(
-    rootReducer,
+    reducer,
     initialTimer,
     applyMiddleware(thunk)
   );
