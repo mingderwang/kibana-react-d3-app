@@ -1,7 +1,7 @@
 {
   "name": "kibana-react-d3-app",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "index.jsx",
   "kibana": {
     "version": "kibana"
   },
