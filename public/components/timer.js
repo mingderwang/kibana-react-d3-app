@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
-const Timer = React.createClass({
-  render() {
-    return (
-      <div>
-        <h1>結果 = {this.props.value}</h1>
-        <button onClick={this.props.onIncrement}> +1 </button>
-        <button onClick={this.props.onDecrement}> +2 </button>
-      </div>
-    );
-  }
-});
+class Timer extends Component { // ES6
+// const Adder = React.createClass({ // ES5
 
+render () {
+  const { value, onIncrement, onDecrement } = this.props
+  return
+  <div>
+    <h1>結果 = {value}</h1>
+    <button onClick={onIncrement}> +1 </button>
+    <button onClick={onDecrement}> +2 </button>
+  </div>
+ }
+// }); // ES5
+} // ES6
 /*
  * 對應 props 到 dispatch 哪個 action
  */
@@ -31,10 +33,9 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-const mapStateToProps = (...args) => { // can replace ...args with state
-  console.log(args[0]); // state
+const mapStateToProps = (state) => {
   return {
-    value: args[0].value
+    value: state.value
   };
 };
 

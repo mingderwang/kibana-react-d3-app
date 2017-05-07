@@ -2,7 +2,7 @@ import React                from 'react';
 import {connect}            from 'react-redux';
 import * as actionCreators  from '../lib/action-creators';
 import ScatterPlot          from './scatter-plot';
-import { randomizeData } from 'plugins/kibana-react-d3-app/state/actions';
+import { randomizeData } from '../state/actions';
 
 const styles = {
   width   : 500,
