@@ -8,6 +8,6 @@ export const randomizeData = () => {
   return {
     app: {},
     value: 9,
-    counter: 10,
+    counter_state: 10,
     data: randomDataSet() };
 };
