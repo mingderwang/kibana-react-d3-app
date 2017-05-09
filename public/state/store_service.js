@@ -14,7 +14,6 @@ app.service('$store', (kbnVersion, basePath) => {
   // Set the defaults from Kibana plugin
   initialData.app.kbnVersion = kbnVersion;
   initialData.app.basePath = basePath;
-  initialData.counter_state = 0;
 
   const store = createStore(
     rootReducer
