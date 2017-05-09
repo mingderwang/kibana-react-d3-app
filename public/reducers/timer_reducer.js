@@ -1,6 +1,8 @@
-function timerReducer(state = {}, action) {
+const initialState = { value: 0 }
+
+function timerReducer(state = initialState, action) {
   switch (action.type) {
-    case 'INCREMENT':
+    case 'ADDONE':
       return Object.assign({}, state, {
         value: state.value + 1
       });

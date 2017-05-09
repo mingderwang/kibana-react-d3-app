@@ -7,7 +7,5 @@ const randomDataSet = () => {
 export const randomizeData = () => {
   return {
     app: {},
-    value: 9,
-    counter_state: 10,
     data: randomDataSet() };
 };
