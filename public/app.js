@@ -1,5 +1,5 @@
 import chrome from 'ui/chrome';
-import modules from 'ui/modules';
+import { uiModules } from 'ui/modules'
 
 import 'ui/autoload/all';
 import './directives/react';
@@ -9,7 +9,7 @@ import rootComponent from './components/container';
 
 require('./main.css');
 
-var app = require('ui/modules').get('apps/kibana-react-d3-app', []);
+var app = uiModules.get('apps/kibana-react-d3-app', []);
 
 require('ui/routes').enable();
 require('ui/routes')

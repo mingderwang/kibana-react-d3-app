@@ -2,9 +2,9 @@ import _ from 'lodash';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { render, unmountComponentAtNode } from 'react-dom';
-import modules from 'ui/modules';
+import { uiModules } from 'ui/modules'
 
-const app = modules.get('apps/kibana-react-d3-app');
+const app = uiModules.get('apps/kibana-react-d3-app');
 app.directive('react', ($store) => {
   return {
     restrict: 'E',
