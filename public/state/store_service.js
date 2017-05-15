@@ -1,5 +1,5 @@
 import React from 'react';
-import modules from 'ui/modules';
+import { uiModules } from 'ui/modules'
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
@@ -9,7 +9,7 @@ import initialTimer from './initial_timer';
 import _ from 'lodash';
 import reducer from '../lib/reducer.js';
 
-const app = modules.get('apps/kibana-react-d3-app');
+const app = uiModules.get('apps/kibana-react-d3-app');
 
 app.service('$store', (kbnVersion, basePath) => {
 
