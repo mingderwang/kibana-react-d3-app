@@ -13,6 +13,5 @@ const renderCircles = (props) => {
 };
 
 export default (props) => {
-  console.log(props)
-  return <g>{ props.data.map(renderCircles(props)) }</g>
+  return <g>{ props.reducer.data.map(renderCircles(props)) }</g>
 }

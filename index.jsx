@@ -1,5 +1,3 @@
-var path = require('path');
-
 module.exports = function (kibana) {
   return new kibana.Plugin({
     name: 'kibana-react-d3-app',

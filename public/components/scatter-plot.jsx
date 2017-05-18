@@ -8,12 +8,12 @@ const yMax   = (data)  => d3.max(data, (d) => d[1]);
 
 const xScale = (props) => {
   return d3.scale.linear()
-    .domain([0, xMax(props.data)])
+    .domain([0, xMax(props.reducer.data)])
     .range([props.padding, props.width - props.padding * 2]);
 };
 const yScale = (props) => {
   return d3.scale.linear()
-    .domain([0, yMax(props.data)])
+    .domain([0, yMax(props.reducer.data)])
     .range([props.height - props.padding, props.padding]);
 };
 const marshalProps = (props) => {

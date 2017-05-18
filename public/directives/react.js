@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { render, unmountComponentAtNode } from 'react-dom';
 import { uiModules } from 'ui/modules'
 
-const app = uiModules.get('apps/kibana-react-d3-app');
+const app = uiModules.get('apps/kibana-react-d3-app', []);
 app.directive('react', ($store) => {
   return {
     restrict: 'E',

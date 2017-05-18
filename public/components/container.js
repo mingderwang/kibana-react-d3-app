@@ -6,8 +6,9 @@ import Counter from './counter_mapping';
 const App = () => {
   return (
       <div className='react--main'>
-        <Timer/>
         <Counter/>
+        <Chart/>
+        <Timer/>
       </div>
   );
 };

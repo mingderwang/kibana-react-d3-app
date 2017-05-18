@@ -7,7 +7,7 @@ import rootReducer from './reducers';
 import initialData from './initial_data';
 import _ from 'lodash';
 
-const app = uiModules.get('apps/kibana-react-d3-app');
+const app = uiModules.get('apps/kibana-react-d3-app', []);
 
 app.service('$store', (kbnVersion, basePath) => {
 
@@ -18,6 +18,7 @@ app.service('$store', (kbnVersion, basePath) => {
   const store = createStore(
     rootReducer
   );
+  console.log('ming')
   console.log(store.getState())
 
   return store;

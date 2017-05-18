@@ -1,5 +1,6 @@
 import chrome from 'ui/chrome';
 import { uiModules } from 'ui/modules'
+import uiRoutes from 'ui/routes'
 
 import 'ui/autoload/all';
 import './directives/react';
@@ -11,9 +12,9 @@ require('./main.css');
 
 var app = uiModules.get('apps/kibana-react-d3-app', []);
 
-require('ui/routes').enable();
-require('ui/routes')
-  .when('/', {
+uiRoutes.enable();
+uiRoutes
+  .when('/?', {
     template: require('plugins/kibana-react-d3-app/index.html')
   });
 
