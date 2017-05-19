@@ -6,5 +6,7 @@ import page2 from '../reducers/page2_reducer'
 
 // reducer name is the name in store.getStore()
 export default combineReducers({
-  page2
+  counter_state,
+  value,
+  reducer
 });

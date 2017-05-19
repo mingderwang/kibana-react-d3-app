@@ -1,8 +1,9 @@
 import React from 'react'
-import Page1 from './Page1'
-import Page2 from './Page2'
 import { connect } from 'react-redux'
 import { Switch, Route, Link } from 'react-router-dom'
+import Counter from './counter_component'
+import Chart from './chart'
+import Timer from './timer'
 
 const Home = () => (
   <div>
@@ -14,8 +15,9 @@ const Main = () => (
   <main>
     <Switch>
       <Route exact path='/' component={Home}/>
-      <Route path='/page1' component={Page1}/>
-      <Route path='/page2' component={Page2}/>
+      <Route path='/chart' component={Chart}/>
+      <Route path='/counter' component={Counter}/>
+      <Route path='/timer' component={Timer}/>
     </Switch>
   </main>
 )
@@ -25,8 +27,9 @@ const Header = () => (
     <nav>
       <ul>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/page1'>Page1</Link></li>
-        <li><Link to='/page2'>Page2</Link></li>
+        <li><Link to='/chart'>d3 Chart</Link></li>
+        <li><Link to='/counter'>Counter</Link></li>
+        <li><Link to='/timer'>Timer</Link></li>
       </ul>
     </nav>
   </header>

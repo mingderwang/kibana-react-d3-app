@@ -17,10 +17,13 @@ uiRoutes
   .when('/?', {
     template: require('plugins/kibana-react-d3-app/index.html')
   })
-  .when('/page1', {
+  .when('/chart', {
     template: require('plugins/kibana-react-d3-app/index.html')
   })
-  .when('/page2', {
+  .when('/counter', {
+    template: require('plugins/kibana-react-d3-app/index.html')
+  })
+  .when('/timer', {
     template: require('plugins/kibana-react-d3-app/index.html')
   });
 
