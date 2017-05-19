@@ -4,7 +4,7 @@ module.exports = function (kibana) {
     require: ['kibana', 'elasticsearch'],
     uiExports: {
       app: {
-        title: 'react-d3-app',
+        title: 'BiMap Toolkit',
         description: 'Weeeeee + react + d3',
         icon: 'plugins/kibana-react-d3-app/pie-chart.svg',
         main: 'plugins/kibana-react-d3-app/app',

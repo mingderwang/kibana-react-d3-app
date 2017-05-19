@@ -39,10 +39,9 @@ svg {
 }
 
 body {
-  background-color: #FFCC00;
-  padding: 20px;
-  margin: 0;
+    background-color: lightblue;
 }
+
 h1, h2, p, ul, li {
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -52,11 +51,10 @@ ul.header li {
   margin: 0;
 }
 ul.header {
-  background-color: #111;
+  background-color: #121f66;
   padding: 0;
 }
 ul.header li a {
-  color: #FFF;
   font-weight: bold;
   text-decoration: none;
   padding: 20px;
@@ -72,4 +70,12 @@ ul.header li a {
 }
 .content li {
   margin-bottom: 10px;
+}
+
+a.active {
+  color: #bdf783;
+}
+
+div.react--main {
+  background-color: #f4dc42;
 }

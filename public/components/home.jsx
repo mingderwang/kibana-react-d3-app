@@ -1,13 +1,13 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Switch, Route, Link } from 'react-router-dom'
-import Counter from './counter_component'
+import { Switch, Route, NavLink } from 'react-router-dom'
+import Counter from './counter_mapping'
 import Chart from './chart'
 import Timer from './timer'
 
 const Home = () => (
   <div>
-    <h1>Welcome to the Tornadoes Website!</h1>
+    <h1>歡迎選用 BitMap 效能評估與日誌分析工具包!</h1>
   </div>
 )
 
@@ -25,11 +25,11 @@ const Main = () => (
 const Header = () => (
   <header>
     <nav>
-      <ul>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/chart'>d3 Chart</Link></li>
-        <li><Link to='/counter'>Counter</Link></li>
-        <li><Link to='/timer'>Timer</Link></li>
+      <ul className="header">
+        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/chart'>d3 Chart</NavLink></li>
+        <li><NavLink to='/counter'>Counter</NavLink></li>
+        <li><NavLink to='/timer'>Timer</NavLink></li>
       </ul>
     </nav>
   </header>
