@@ -9,6 +9,7 @@ import './state/store_service';
 import rootComponent from './components/container';
 
 require('./main.css');
+require('./react-table.css');
 
 var app = uiModules.get('apps/kibana-react-d3-app', []);
 
