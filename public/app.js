@@ -16,6 +16,12 @@ uiRoutes.enable();
 uiRoutes
   .when('/?', {
     template: require('plugins/kibana-react-d3-app/index.html')
+  })
+  .when('/page1', {
+    template: require('plugins/kibana-react-d3-app/index.html')
+  })
+  .when('/page2', {
+    template: require('plugins/kibana-react-d3-app/index.html')
   });
 
 app

@@ -2,6 +2,7 @@ import React from 'react'
 import Page1 from './Page1'
 import Page2 from './Page2'
 import { connect } from 'react-redux'
+import { Switch, Route, Link } from 'react-router-dom'
 
 const Home = () => (
   <div>
@@ -24,8 +25,8 @@ const Header = () => (
     <nav>
       <ul>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/roster'>Roster</Link></li>
-        <li><Link to='/schedule'>Schedule</Link></li>
+        <li><Link to='/page1'>Page1</Link></li>
+        <li><Link to='/page2'>Page2</Link></li>
       </ul>
     </nav>
   </header>
@@ -33,7 +34,8 @@ const Header = () => (
 
 const App = () => (
   <div>
-  <h1>hello</h1>
+  <Header/>
+  <Main/>
   </div>
 )
 
