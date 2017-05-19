@@ -22,4 +22,10 @@ const Chart = (props) => {
   </div>
 };
 
-export default connect((state) => state, actionCreators)(Chart);
+const mapStateToProps = (state) => {
+  return {
+    reducer: state.reducer
+  };
+};
+
+export default connect(mapStateToProps, actionCreators)(Chart);

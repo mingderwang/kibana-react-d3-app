@@ -1,14 +1,16 @@
-import React from 'react';
-import Chart from './chart';
-import Timer from './timer';
-import Counter from './counter_mapping';
+import React from 'react'
+import Chart from './chart'
+import Timer from './timer'
+import Counter from './counter_mapping'
+import Item from './test'
 
 const App = () => {
   return (
       <div className='react--main'>
-        <Counter/>
-        <Chart/>
-        <Timer/>
+      <Item/>
+      <Counter/>
+      <Timer/>
+      <Chart/>
       </div>
   );
 };

@@ -18,8 +18,5 @@ app.service('$store', (kbnVersion, basePath) => {
   const store = createStore(
     rootReducer
   );
-  console.log('ming')
-  console.log(store.getState())
-
   return store;
 });

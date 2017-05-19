@@ -7,14 +7,16 @@ const xMax   = (data)  => d3.max(data, (d) => d[0]);
 const yMax   = (data)  => d3.max(data, (d) => d[1]);
 
 const xScale = (props) => {
+  const { reducer, width, padding } = props
   return d3.scale.linear()
-    .domain([0, xMax(props.reducer.data)])
-    .range([props.padding, props.width - props.padding * 2]);
+    .domain([0, xMax(reducer.data)])
+    .range([padding, width - padding * 2]);
 };
 const yScale = (props) => {
+  const { reducer, height, padding } = props
   return d3.scale.linear()
-    .domain([0, yMax(props.reducer.data)])
-    .range([props.height - props.padding, props.padding]);
+    .domain([0, yMax(reducer.data)])
+    .range([height - padding, padding]);
 };
 const marshalProps = (props) => {
   const scales = { xScale: xScale(props), yScale: yScale(props) };
