@@ -1,10 +1,11 @@
 import React from 'react'
-import RootApp from './RootApp';
+import RootApp from './RootApp'
+import SimpleTable from './simpletable'
 
 const App = () => {
   return (
       <div className='react--main'>
-        <RootApp/>
+        <SimpleTable/>
       </div>
   );
 };
