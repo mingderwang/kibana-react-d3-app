@@ -24,7 +24,10 @@ uiRoutes
   .when('/counter', {
     template: require('plugins/kibana-react-d3-app/index.html')
   })
-  .when('/timer', {
+  .when('/simplemap', {
+    template: require('plugins/kibana-react-d3-app/index.html')
+  })
+  .when('/simpletable', {
     template: require('plugins/kibana-react-d3-app/index.html')
   });
 
