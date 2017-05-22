@@ -39,7 +39,6 @@ svg {
 }
 
 body {
-  background-color: #FFCC00;
   padding: 20px;
   margin: 0;
 }
@@ -56,7 +55,6 @@ ul.header {
   padding: 0;
 }
 ul.header li a {
-  color: #FFF;
   font-weight: bold;
   text-decoration: none;
   padding: 20px;
@@ -72,4 +70,8 @@ ul.header li a {
 }
 .content li {
   margin-bottom: 10px;
+}
+
+a.active {
+  color: #bdf783;
 }
